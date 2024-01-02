@@ -19,7 +19,7 @@ RUN cargo chef cook --release --recipe-path recipe.json
 
 COPY . .
 
-RUN cargo build -p hello-hyper --release
+RUN cargo build -p rivet-head-app --release
 
 # Runtime stage
 
@@ -29,8 +29,8 @@ WORKDIR /app
 
 RUN apt-get update -y && apt-get install -y --no-install-recommends openssl ca-certificates && apt-get autoremove -y && apt-get clean -y && rm -rf /var/lib/apt/lists/*
 
-COPY --from=builder /app/target/release/hello-hyper hello-hyper
+COPY --from=builder /app/target/release/rivet-head-app rivet-head-app
 
 COPY assets assets
 
-ENTRYPOINT ["./hello-hyper"]
+ENTRYPOINT ["./rivet-head-app"]
