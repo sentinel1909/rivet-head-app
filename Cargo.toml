@@ -1,0 +1,19 @@
+[package]
+name = "rivet-head-app"
+version = "0.1.0"
+edition = "2021"
+description = "A diary of my music listening habits"
+readme = "README.md"
+authors = ["Jeffery D. Mitchell", "<sentinel1909@jeff-mitchell.dev"]
+repository = "https://github.com/sentinel1909/rivet-head-app"
+license = 'MIT'
+publish = false
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+http-body-util = "0.1"
+hyper = { version = "1", features = [ "full"] }
+hyper-util = { version = "0.1", features = [ "full"] }
+tokio = { version = "1", features = [ "full" ] }
+
