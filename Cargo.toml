@@ -1,6 +1,6 @@
 [package]
 name = "rivet-head-app"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2021"
 description = "A diary of my music listening habits"
 readme = "README.md"
