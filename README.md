@@ -1,3 +1,3 @@
-# Basic Web File Server
+# Rivet Head Music Diary
 
-This is a basic web file server using Hyper 1.0. It uses the [Getting Started with a Server](https://hyper.rs/guides/1/server/hello-world/) example from the [Hyper](https://hyper.rs) as inspiration.
+This is my music listening diary site/application.
