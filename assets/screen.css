@@ -28,3 +28,25 @@ body, button, input, table, textarea, select {
  font:normal 1em/1.5 arial,helvetica,sans-serif;
 }
 /* end CSS reset */
+
+/* begin main styles */
+
+/* begin main styles */
+
+#fauxBody {
+  max-width: 1080px;
+  margin: auto auto;
+  display: grid;
+  place-items: center;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+article {
+  flex: 1 1 200px;
+  padding-right: 5px;
+}
