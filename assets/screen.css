@@ -31,22 +31,74 @@ body, button, input, table, textarea, select {
 
 /* begin main styles */
 
-/* begin main styles */
+body {
+  background-color: slategrey;
+}
 
-#fauxBody {
-  max-width: 1080px;
-  margin: auto auto;
+#page-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 100%;
+  overflow: auto;
+  margin: 0 auto;
+  color: yellow;
+}
+
+#page-container a {
+  color: yellow;
+  text-decoration: none;
+}
+
+#page-container a:hover {
+  font-weight: bold;
+}
+
+#page-container h2 {
   display: grid;
   place-items: center;
+  flex-grow: 0;
+}
+
+header {
+  display: grid;
+  place-items: center;
+  flex-grow: 0;
+}
+
+main {
+  padding-bottom: 2.5rem;
 }
 
 section {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 article {
   flex: 1 1 200px;
-  padding-right: 5px;
+  margin: 10px;
+  padding: 20px;
+  background-color: blue;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
+
+footer {
+  display: grid;
+  place-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/* end main styles */
+
+/* begin media queries */
+
+
+
