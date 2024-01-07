@@ -1,5 +1,15 @@
 /* assets/screen.css */
 
+/* CSS variables declarations */
+:root {
+  --main-background-color: #210F04;
+  --card-background-color: #452103;
+  --card-drop-shadow-color: #934B00;
+  --primary-text-color: yellow;
+  --primary-anchor-color: yellow;
+}
+/* end CSS variables declaration */
+
 /* begin CSS reset */
 html,body,div,p,h1,h2,h3,h4,h5,h6,
 ul,ol,li,dl,dt,dd,form,fieldset,caption,
@@ -30,9 +40,8 @@ body, button, input, table, textarea, select {
 /* end CSS reset */
 
 /* begin main styles */
-
 body {
-  background-color: slategrey;
+  background-color: var(--main-background-color);
 }
 
 #page-container {
@@ -42,11 +51,11 @@ body {
   min-height: 100%;
   overflow: auto;
   margin: 0 auto;
-  color: yellow;
+  color: var(--primary-text-color);
 }
 
 #page-container a {
-  color: yellow;
+  color: var(--primary-anchor-color);
   text-decoration: none;
 }
 
@@ -83,9 +92,9 @@ article {
   flex: 1 1 200px;
   margin: 10px;
   padding: 20px;
-  background-color: blue;
+  background-color: var(--card-background-color);
   border-radius: 20px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 var(--card-drop-shadow-color);
 }
 
 footer {
@@ -95,10 +104,7 @@ footer {
   bottom: 0;
   width: 100%;
 }
-
 /* end main styles */
-
-/* begin media queries */
 
 
 
